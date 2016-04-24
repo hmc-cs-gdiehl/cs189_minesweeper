@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>Minesweeper</title>
+	<style>
+	  table {
+      table-layout: fixed;
+	  	border: 1px solid black;
+      width: 400px;
+	  }
+
+    th, td {
+      height: 40px;
+      text-align: center;
+      border: 1px solid black;
+      color: black;
+      background-color: #b3d1ff;
+
+    }
+
+    table.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      padding-bottom: 20px;
+    }
+
+    .directions {
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
+
+    .row {
+      padding-top: 20px;
+    }
+
+
+  </style>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="cs189_minesweeper_script.js"></script>
+
+</head>
+<body>
+
+  <h1 class= "text-center">Minesweeper</h1>
+
+
+    <table class="center" id="gameBoard"></table>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-md-4"></div>
+        <div class = "col-md-4">
+        <p id="minescore"></p>
+      </div>
+      <div class = "col-md-2">
+        <h4 id="endgame"></h4>
+    </div>
+      <div class = "col-md-2"></div>
+    </div>
+    <button id = "newGame" type = "button">New Game</button>
+  <div class = "directions">
+  <h3>Directions</h3>
+  <p>Goal: Clear all of the cells without clicking any mines.</p>
+  <p>The number of mines around surrounding a cell will be revealed when you click on it. (Corners count as neighboring cells.)</p>
+  <p>To flag a cell as a probable mine, press the alt key and click on the cell. Unflag a mine by pressing the alt key and clicking again.</p>
+</div>
+</div>
+
+</body>
+</html>
